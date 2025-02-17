@@ -5,13 +5,8 @@
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
-    </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    <Filter Include="Source Files\SampleCode">
+      <UniqueIdentifier>{32c5870a-0da7-4463-84d3-ec8141b40be1}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -20,6 +15,102 @@
     </ClCompile>
     <ClCompile Include="HelloTriangleApplication.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\VulkanTutorial\code\00_base_code.cpp">
+      <Filter>Source Files\SampleCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\VulkanTutorial\code\01_instance_creation.cpp">
+      <Filter>Source Files\SampleCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\VulkanTutorial\code\02_validation_layers.cpp">
+      <Filter>Source Files\SampleCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\VulkanTutorial\code\03_physical_device_selection.cpp">
+      <Filter>Source Files\SampleCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\VulkanTutorial\code\04_logical_device.cpp">
+      <Filter>Source Files\SampleCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\VulkanTutorial\code\05_window_surface.cpp">
+      <Filter>Source Files\SampleCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\VulkanTutorial\code\06_swap_chain_creation.cpp">
+      <Filter>Source Files\SampleCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\VulkanTutorial\code\07_image_views.cpp">
+      <Filter>Source Files\SampleCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\VulkanTutorial\code\08_graphics_pipeline.cpp">
+      <Filter>Source Files\SampleCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\VulkanTutorial\code\09_shader_modules.cpp">
+      <Filter>Source Files\SampleCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\VulkanTutorial\code\10_fixed_functions.cpp">
+      <Filter>Source Files\SampleCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\VulkanTutorial\code\11_render_passes.cpp">
+      <Filter>Source Files\SampleCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\VulkanTutorial\code\12_graphics_pipeline_complete.cpp">
+      <Filter>Source Files\SampleCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\VulkanTutorial\code\13_framebuffers.cpp">
+      <Filter>Source Files\SampleCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\VulkanTutorial\code\14_command_buffers.cpp">
+      <Filter>Source Files\SampleCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\VulkanTutorial\code\15_hello_triangle.cpp">
+      <Filter>Source Files\SampleCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\VulkanTutorial\code\16_frames_in_flight.cpp">
+      <Filter>Source Files\SampleCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\VulkanTutorial\code\17_swap_chain_recreation.cpp">
+      <Filter>Source Files\SampleCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\VulkanTutorial\code\18_vertex_input.cpp">
+      <Filter>Source Files\SampleCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\VulkanTutorial\code\19_vertex_buffer.cpp">
+      <Filter>Source Files\SampleCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\VulkanTutorial\code\20_staging_buffer.cpp">
+      <Filter>Source Files\SampleCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\VulkanTutorial\code\21_index_buffer.cpp">
+      <Filter>Source Files\SampleCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\VulkanTutorial\code\22_descriptor_set_layout.cpp">
+      <Filter>Source Files\SampleCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\VulkanTutorial\code\23_descriptor_sets.cpp">
+      <Filter>Source Files\SampleCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\VulkanTutorial\code\24_texture_image.cpp">
+      <Filter>Source Files\SampleCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\VulkanTutorial\code\25_sampler.cpp">
+      <Filter>Source Files\SampleCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\VulkanTutorial\code\26_texture_mapping.cpp">
+      <Filter>Source Files\SampleCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\VulkanTutorial\code\27_depth_buffering.cpp">
+      <Filter>Source Files\SampleCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\VulkanTutorial\code\28_model_loading.cpp">
+      <Filter>Source Files\SampleCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\VulkanTutorial\code\29_mipmapping.cpp">
+      <Filter>Source Files\SampleCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\VulkanTutorial\code\30_multisampling.cpp">
+      <Filter>Source Files\SampleCode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\VulkanTutorial\code\31_compute_shader.cpp">
+      <Filter>Source Files\SampleCode</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
