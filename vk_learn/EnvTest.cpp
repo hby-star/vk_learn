@@ -6,7 +6,8 @@
 #include <glm/mat4x4.hpp>
 #include <iostream>
 
-int main() {
+int main()
+{
 	glfwInit();
 	glfwWindowHint(GLFW_CLIENT_API, GLFW_NO_API);
 	GLFWwindow* window = glfwCreateWindow(800, 600, "Vulkan window", nullptr, nullptr);
@@ -17,7 +18,8 @@ int main() {
 	glm::mat4 matrix;
 	glm::vec4 vec;
 	auto test = matrix * vec;
-	while (!glfwWindowShouldClose(window)) {
+	while (!glfwWindowShouldClose(window))
+	{
 		glfwPollEvents();
 	}
 	glfwDestroyWindow(window);
