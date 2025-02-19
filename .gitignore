@@ -363,3 +363,5 @@ MigrationBackup/
 FodyWeavers.xsd
 /frag.spv
 /vert.spv
+/vk_learn/shaders/frag.spv
+/vk_learn/shaders/vert.spv
