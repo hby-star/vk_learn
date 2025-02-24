@@ -321,6 +321,7 @@ private:
 		glfwTerminate();
 	}
 
+	// An instance is created by describing your application and any API extensions you will be using. 
 	void createInstance()
 	{
 		if (enableValidationLayers && !checkValidationLayerSupport())
@@ -388,6 +389,7 @@ private:
 		}
 	}
 
+	// A cross-platform abstraction over windows to render 
 	void createSurface()
 	{
 		if (glfwCreateWindowSurface(instance, window, nullptr, &surface) != VK_SUCCESS)
@@ -396,6 +398,7 @@ private:
 		}
 	}
 
+	// Query for Vulkan supported hardware and select one or more VkPhysicalDevices to use for operations
 	void pickPhysicalDevice()
 	{
 		uint32_t deviceCount = 0;
@@ -425,6 +428,8 @@ private:
 		}
 	}
 
+	// Describe more specifically which VkPhysicalDeviceFeatures you will be using
+	// and specify which queue families you would like to use
 	void createLogicalDevice()
 	{
 		QueueFamilyIndices indices = findQueueFamilies(physicalDevice);
@@ -475,6 +480,7 @@ private:
 		vkGetDeviceQueue(device, indices.presentFamily.value(), 0, &presentQueue);
 	}
 
+	// A collection of render targets，ensure that the image that we're currently rendering to is different from the one that is currently on the screen
 	void createSwapChain()
 	{
 		SwapChainSupportDetails swapChainSupport = querySwapChainSupport(physicalDevice);
@@ -483,6 +489,7 @@ private:
 		VkPresentModeKHR presentMode = chooseSwapPresentMode(swapChainSupport.presentModes);
 		VkExtent2D extent = chooseSwapExtent(swapChainSupport.capabilities);
 
+		// 三重缓冲
 		uint32_t imageCount = swapChainSupport.capabilities.minImageCount + 1;
 		if (swapChainSupport.capabilities.maxImageCount > 0 && imageCount > swapChainSupport.capabilities.maxImageCount)
 		{
@@ -534,6 +541,7 @@ private:
 		swapChainExtent = extent;
 	}
 
+	// An image view references a specific part of an image to be used
 	void createImageViews()
 	{
 		swapChainImageViews.resize(swapChainImages.size());
@@ -562,6 +570,7 @@ private:
 		}
 	}
 
+	// Describe the type of images that are used during rendering operations, how they will be used, and how their contents should be treated
 	void createRenderPass()
 	{
 		VkAttachmentDescription colorAttachment{};
@@ -728,6 +737,7 @@ private:
 		vkDestroyShaderModule(device, vertShaderModule, nullptr);
 	}
 
+	// A framebuffer references image views that are to be used for color, depth and stencil targets.
 	void createFramebuffers()
 	{
 		swapChainFramebuffers.resize(swapChainImageViews.size());
@@ -1060,12 +1070,14 @@ private:
 		return indices;
 	}
 
+	// 获取所需扩展，目前为获取glfw所需的Vulkan扩展
 	std::vector<const char*> getRequiredExtensions()
 	{
 		uint32_t glfwExtensionCount = 0;
 		const char** glfwExtensions;
 		glfwExtensions = glfwGetRequiredInstanceExtensions(&glfwExtensionCount);
 
+		// 迭代器构造，vec(begin_ptr, end_ptr)
 		std::vector<const char*> extensions(glfwExtensions, glfwExtensions + glfwExtensionCount);
 
 		if (enableValidationLayers)
