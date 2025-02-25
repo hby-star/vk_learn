@@ -13,16 +13,16 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="HelloTriangleApplication.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
     <CustomBuild Include="shaders\shader.vert">
       <Filter>Source Files\shaders</Filter>
     </CustomBuild>
     <CustomBuild Include="shaders\shader.frag">
       <Filter>Source Files\shaders</Filter>
     </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="HelloTriangleApplication.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

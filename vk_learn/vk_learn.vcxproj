@@ -187,9 +187,6 @@ C:\VulkanSDK\Lib\glfw-3.4.bin.WIN64\lib-vc2022;
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="HelloTriangleApplication.cpp" />
-  </ItemGroup>
-  <ItemGroup>
     <CustomBuild Include="shaders\shader.frag">
       <FileType>Document</FileType>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
@@ -228,6 +225,9 @@ C:\VulkanSDK\Lib\glfw-3.4.bin.WIN64\lib-vc2022;
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">glslangValidator -V %(Identity) -o .\shaders\vert.spv</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">vert.spv</Outputs>
     </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="HelloTriangleApplication.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
