@@ -765,6 +765,7 @@ private:
 		}
 	}
 
+	// A command pool is used to allocate command buffers that are used to record commands for drawing
 	void createCommandPool()
 	{
 		QueueFamilyIndices queueFamilyIndices = findQueueFamilies(physicalDevice);
@@ -780,6 +781,7 @@ private:
 		}
 	}
 
+	// A command buffer is a sequence of commands recorded by the application to be executed by the GPU
 	void createCommandBuffer()
 	{
 		VkCommandBufferAllocateInfo allocInfo{};
@@ -796,6 +798,7 @@ private:
 
 	void recordCommandBuffer(VkCommandBuffer commandBuffer, uint32_t imageIndex)
 	{
+		// begin the render pass
 		VkCommandBufferBeginInfo beginInfo{};
 		beginInfo.sType = VK_STRUCTURE_TYPE_COMMAND_BUFFER_BEGIN_INFO;
 
@@ -817,8 +820,10 @@ private:
 
 		vkCmdBeginRenderPass(commandBuffer, &renderPassInfo, VK_SUBPASS_CONTENTS_INLINE);
 
+		// bind the graphics pipeline
 		vkCmdBindPipeline(commandBuffer, VK_PIPELINE_BIND_POINT_GRAPHICS, graphicsPipeline);
 
+		// set the viewport
 		VkViewport viewport{};
 		viewport.x = 0.0f;
 		viewport.y = 0.0f;
@@ -828,13 +833,16 @@ private:
 		viewport.maxDepth = 1.0f;
 		vkCmdSetViewport(commandBuffer, 0, 1, &viewport);
 
+		// set the scissor
 		VkRect2D scissor{};
 		scissor.offset = { 0, 0 };
 		scissor.extent = swapChainExtent;
 		vkCmdSetScissor(commandBuffer, 0, 1, &scissor);
 
+		// draw three vertices
 		vkCmdDraw(commandBuffer, 3, 1, 0, 0);
 
+		// end the render pass
 		vkCmdEndRenderPass(commandBuffer);
 
 		if (vkEndCommandBuffer(commandBuffer) != VK_SUCCESS)
