@@ -198,13 +198,13 @@ C:\VulkanSDK\Lib\glfw-3.4.bin.WIN64\lib-vc2022;
       <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</DeploymentContent>
       <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</DeploymentContent>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">glslangValidator -V %(Identity) -o .\shaders\frag.spv</Command>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">frag.spv</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\shaders\frag.spv</Outputs>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">glslangValidator -V %(Identity) -o .\shaders\frag.spv</Command>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">frag.spv</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\shaders\frag.spv</Outputs>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">glslangValidator -V %(Identity) -o .\shaders\frag.spv</Command>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">frag.spv</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\shaders\frag.spv</Outputs>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">glslangValidator -V %(Identity) -o .\shaders\frag.spv</Command>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">frag.spv</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\shaders\frag.spv</Outputs>
     </CustomBuild>
     <CustomBuild Include="shaders\shader.vert">
       <FileType>Document</FileType>
@@ -217,13 +217,13 @@ C:\VulkanSDK\Lib\glfw-3.4.bin.WIN64\lib-vc2022;
       <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</DeploymentContent>
       <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</DeploymentContent>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">glslangValidator -V %(Identity) -o .\shaders\vert.spv</Command>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">vert.spv</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\shaders\vert.spv</Outputs>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">glslangValidator -V %(Identity) -o .\shaders\vert.spv</Command>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">vert.spv</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\shaders\vert.spv</Outputs>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">glslangValidator -V %(Identity) -o .\shaders\vert.spv</Command>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">vert.spv</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\shaders\vert.spv</Outputs>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">glslangValidator -V %(Identity) -o .\shaders\vert.spv</Command>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">vert.spv</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\shaders\vert.spv</Outputs>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
