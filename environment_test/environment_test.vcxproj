@@ -398,6 +398,7 @@
       <AdditionalIncludeDirectories>C:\VulkanSDK\Lib\glfw-3.4.bin.WIN64\include;
 C:\VulkanSDK\1.4.304.1\Include;
 C:\VulkanSDK\Lib\glm</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -437,6 +438,7 @@ C:\VulkanSDK\Lib\glfw-3.4.bin.WIN64\lib-vc2022;
       <AdditionalIncludeDirectories>C:\VulkanSDK\Lib\glfw-3.4.bin.WIN64\include;
 C:\VulkanSDK\1.4.304.1\Include;
 C:\VulkanSDK\Lib\glm</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -476,6 +478,7 @@ C:\VulkanSDK\Lib\glfw-3.4.bin.WIN64\lib-vc2022;
       <AdditionalIncludeDirectories>C:\VulkanSDK\Lib\glfw-3.4.bin.WIN64\include;
 C:\VulkanSDK\1.4.304.1\Include;
 C:\VulkanSDK\Lib\glm</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -515,6 +518,7 @@ C:\VulkanSDK\Lib\glfw-3.4.bin.WIN64\lib-vc2022;
       <AdditionalIncludeDirectories>C:\VulkanSDK\Lib\glfw-3.4.bin.WIN64\include;
 C:\VulkanSDK\1.4.304.1\Include;
 C:\VulkanSDK\Lib\glm</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
