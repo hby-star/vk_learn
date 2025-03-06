@@ -25,4 +25,8 @@
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="lib\tiny_obj_loader.h" />
+    <ClInclude Include="lib\stb_image.h" />
+  </ItemGroup>
 </Project>
