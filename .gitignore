@@ -365,3 +365,5 @@ FodyWeavers.xsd
 /vert.spv
 /vk_learn/shaders/frag.spv
 /vk_learn/shaders/vert.spv
+/FinalEffect/shaders/frag.spv
+/FinalEffect/shaders/vert.spv
